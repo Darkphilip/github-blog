@@ -4,18 +4,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>깃허브 블로그 테스트 | GIthub Blog Test</title>
+<title>gitInfo | 깃허브 블로그 테스트</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="깃허브 블로그 테스트" />
+<meta property="og:title" content="gitInfo" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="GIthub Blog Test" />
 <meta property="og:description" content="GIthub Blog Test" />
-<link rel="canonical" href="https://tigeryoon.github.io/testblog/" />
-<meta property="og:url" content="https://tigeryoon.github.io/testblog/" />
+<link rel="canonical" href="https://tigeryoon.github.io/testblog/gitInfo/" />
+<meta property="og:url" content="https://tigeryoon.github.io/testblog/gitInfo/" />
 <meta property="og:site_name" content="깃허브 블로그 테스트" />
-<meta property="og:image" content="https://tigeryoon.github.io/testblog/images/logo.png" />
 <script type="application/ld+json">
-{"description":"GIthub Blog Test","url":"https://tigeryoon.github.io/testblog/","@type":"WebSite","headline":"깃허브 블로그 테스트","image":"https://tigeryoon.github.io/testblog/images/logo.png","name":"깃허브 블로그 테스트","@context":"https://schema.org"}</script>
+{"description":"GIthub Blog Test","url":"https://tigeryoon.github.io/testblog/gitInfo/","@type":"WebPage","headline":"gitInfo","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/testblog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://tigeryoon.github.io/testblog/feed.xml" title="깃허브 블로그 테스트" /><link rel="shortcut icon" type="image/x-icon" href="/testblog/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -67,64 +66,47 @@ window.onload = wrap_img;
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="home"><p><a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Ftigeryoon.github.io%2Ftestblog%2F&amp;count_bg=%2389CB56&amp;title_bg=%232A4DC5&amp;icon=zapier.svg&amp;icon_color=%23E7E7E7&amp;title=hits&amp;edge_flat=false" alt="Hits" /></a></p>
+        <img src="https://ghchart.rshah.org/tigeryoon" alt="" style="width: 660px; height: 100px;">
+<div id="repos">
+<script>
+// 비동기 작업을 위해 async function 선언
+const initRepo = async () =>{
+        const _username = 'tigeryoon'
+        
+        // 추가할 dom선택
+        const repoUl = document.getElementById("repos")
 
-<p><img src="https://ghchart.rshah.org/tigeryoon" alt="잔디" title="https://github.com/tigeryoon" /></p>
+        // headers 설명 : 깃허브에 요청할 형식 지정
+        let response = await fetch('https://api.github.com/users/tigeryoon/repos',
+        {headers:{
+            'Accept' : 'application/vnd.github.v3+json'
+        }});
+        const repoJson = await response.json()
+        // repo받아온 내용 확인
+        // console.log(repoJson);
 
-<h1 id="intro">intro</h1>
+        // json내용을 map을 이용해 각 dom을 만들고 추가
+        repoJson.map((repos)=>{
+            let h2Element = document.createElement("h2")
+            h2Element.textContent = repos.name
 
-<p>안녕하세요! 파이썬 공부중인 예비개발자입니다.</p>
+            let pElementDesc = document.createElement("p")
+            pElementDesc.textContent = "레포설명 : " + repos.description
 
-<p>파이썬이 가지는 장점</p>
-<ul>
-  <li>하나</li>
-  <li>둘</li>
-  <li>셋</li>
-</ul>
+            let aElementURL = document.createElement("a")
+            aElementURL.href = repos.svn_url
+            aElementURL.textContent = repos.svn_url
 
-<h1 id="posts">Posts</h1>
+            //각 요소를 <div id="repos">에 추가
+            repoUl.append(h2Element)
+            repoUl.append(pElementDesc)
+            repoUl.append(aElementURL)
+            repoUl.append(document.createElement("br"))
+        })
+    }
+    initRepo()
+</script>
 
-
-
-  
-
-  <!-- Hide posts if front matter flag hide:true -->
-  
-  
-
-  <!-- Sort posts by rank, then date -->
-  
-  
-  
-
- 
-  
-
-   <!-- Assemble final sorted posts array -->
-  
-  <ul class="post-list"><li><h3>
-    <a class="post-link" href="/testblog/markdown/2021/07/11/markdown_test.html">
-    markdown_test
-    </a>
-</h3><p class="post-meta-description">markdown test</p><p class="post-meta">Jul 11, 2021</p>
-</li><li><h3>
-    <a class="post-link" href="/testblog/jupyter/test/2021/07/10/_07_11_test.html">
-    Test
-    </a>
-</h3><p class="post-meta-description">summary</p><p class="post-meta">Jul 10, 2021</p>
-</li><li><h3>
-    <a class="post-link" href="/testblog/jupyter/2020/02/20/test.html">
-    Fastpages Notebook Blog Post
-    </a>
-</h3><p class="post-meta-description">A tutorial of fastpages for Jupyter notebooks.</p><p class="post-meta">Feb 20, 2020</p>
-</li><li><h3>
-    <a class="post-link" href="/testblog/markdown/2020/01/14/test-markdown-post.html">
-    An Example Markdown Post
-    </a>
-</h3><p class="post-meta-description">A minimal example of using markdown with fastpages.</p><p class="post-meta">Jan 14, 2020</p>
-</li></ul>
-
-    </div>
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/testblog/"></data>

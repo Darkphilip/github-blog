@@ -62,7 +62,9 @@
   
 
   
-      ,"page3": {
+
+  
+      ,"page4": {
           "title": "Sample",
           "content": "hello world . hello world | hello world | hello world | .",
           "url": "https://tigeryoon.github.io/testblog/sample/",
@@ -92,7 +94,7 @@
   
 
   
-      ,"page11": {
+      ,"page12": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://tigeryoon.github.io/testblog/robots.txt",
