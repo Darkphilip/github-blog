@@ -40,7 +40,7 @@ baseurl: "/testblog" # the subpath of your site, e.g. "/blog".
 minima:
   social_links:
     twitter: 
-    github: "https://github.com/tigeryoon"
+    github: tigeryoon
 
 # Set this to true to get LaTeX math equation support
 use_math: 
