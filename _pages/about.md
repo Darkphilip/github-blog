@@ -4,8 +4,8 @@ title: About Me
 permalink: /about/
 ---
 
-This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
+## 파이썬 클린 코드
 
+## 실용주의 프로그래머
 
-
-[^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats.
+## 파이썬 아키텍쳐
