@@ -15,9 +15,9 @@
         ,"post1": {
             "title": "Test",
             "content": "print(&#39;hello world&#39;) . hello world . print(1+1) . 2 .",
-            "url": "https://tigeryoon.github.io/testblog/jupyter/test/2021/07/10/_07_11_test.html",
-            "relUrl": "/jupyter/test/2021/07/10/_07_11_test.html",
-            "date": " • Jul 10, 2021"
+            "url": "https://tigeryoon.github.io/testblog/jupyter/test/2021/07/11/_07_11_test.html",
+            "relUrl": "/jupyter/test/2021/07/11/_07_11_test.html",
+            "date": " • Jul 11, 2021"
         }
         
     
@@ -64,17 +64,6 @@
   
 
   
-      ,"page4": {
-          "title": "Sample",
-          "content": "hello world . hello world | hello world | hello world | .",
-          "url": "https://tigeryoon.github.io/testblog/sample/",
-          "relUrl": "/sample/",
-          "date": ""
-      }
-      
-  
-
-  
   
 
   
@@ -94,7 +83,7 @@
   
 
   
-      ,"page12": {
+      ,"page11": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://tigeryoon.github.io/testblog/robots.txt",
