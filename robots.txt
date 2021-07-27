@@ -1,1 +1,1 @@
-Sitemap: https://tigeryoon.github.io/testblog/sitemap.xml
+Sitemap: https://darkphilip.github.io/github-blog/sitemap.xml
